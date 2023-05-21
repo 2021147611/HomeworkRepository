@@ -45,6 +45,34 @@ img:hover {
           
          }
         </style>
+	    <script>
+            let counter=1;
+            document.addEventListener("DOMContentloaded",load);
+            window.onscroll=()=>{
+                if(window.innerHeight+window.scorllY>=document.body.offsetHeight){
+                    load();
+                }
+            };
+            function load()
+            {
+                const start=counter;
+                const end=start+1;
+                counter=end+1;
+                 fetch('products.json')
+                 .then(response =>response.json())
+                .then(posts=> { 
+                    posts.forEach(add_post);
+                        
+                    })
+
+            };
+            function add_post(comments){
+                const post=document.createElement('div');
+                post.className='post';
+                post.innerHTML=comments.body;
+                document.querySelector('#posts').append(post);
+            }
+        </script>
     </head>
     <body>
         <div class="text">
