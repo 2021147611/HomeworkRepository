@@ -1,0 +1,24 @@
+[
+    {
+        "name":"book",
+        "pricr":10000,
+        "count":20,
+        "image":"https://img0.baidu.com/it/u=1494779584,3251865152&fm=253&fmt=auto&app=138&f=JPEG?w=752&h=500",
+        "type":"stationery"
+       
+    },
+    {
+        "name":"pen",
+        "pricr":3000,
+        "count":50,
+        "image":"https://img1.baidu.com/it/u=1711209097,4013146828&fm=253&fmt=auto?w=750&h=500",
+        "type":"stationery"
+    },
+    {
+        "name":"bag",
+        "pricr":15000,
+        "count":5,
+        "image":"https://img1.baidu.com/it/u=3774800514,1933554520&fm=253&fmt=auto&app=138&f=JPEG?w=543&h=500",
+        "type":"stationery"
+    }
+]
